@@ -56,6 +56,11 @@
       "path": "cz-conventional-changelog"
     }
   },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "lint-staged": {
     "*.js": [
       "npm run pretty",
@@ -64,7 +69,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "@commitlint/cli": "^9.1.1", 
+    "@commitlint/cli": "^9.1.1",
     "@commitlint/config-conventional": "^9.1.1",
     "babel-eslint": "^10.1.0",
     "chai": "^4.2.0",

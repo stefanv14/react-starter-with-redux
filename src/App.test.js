@@ -1,6 +1,4 @@
-test('renders learn react link', () => {
-  it('should ...', async () => {
-    const result = 2 + 2
-    expect(result).toEqual(4)
-  })
+test('result 4', () => {
+  const result = 2 + 2
+  expect(result).toEqual(4)
 })

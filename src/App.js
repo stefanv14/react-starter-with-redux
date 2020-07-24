@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { useSelector } from 'react-redux'
+import './App.css'
+import { Text } from './UI/Text/Text'
 
 function App() {
+  const title = useSelector((state) => state.global.title)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <>
+      <div>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <span>
+            <Text spreadText="This is" text={title} />
+          </span>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
